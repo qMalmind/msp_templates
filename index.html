@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>МСП</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="bg-light border-bottom">
+      <div class="container py-2">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <div class="d-flex align-items-center fw-bold fs-4">
+            <img src="./logo.jpg" alt="Логотип МСП" class="logo-img" />
+            МСП
+          </div>
+          <div class="text-end contact-info">
+            <div>Email: <a href="mailto:info@msp.ru">info@msp.ru</a></div>
+            <div>Тел: <a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Продукция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./usligi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-contact-info">
+              <div>Email: <a href="mailto:info@msp.ru">info@msp.ru</a></div>
+              <div>Тел: <a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
+            </div>
+            <button
+              class="btn btn-primary ms-2"
+              data-bs-toggle="modal"
+              data-bs-target="#feedbackModal"
+            >
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+      <!-- Секция: Слайдер -->
+      <section>
+        <div
+          class="swiper mySwiper main-swiper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-wrapper">
+            <!-- Слайд 1 -->
+            <div class="swiper-slide position-relative">
+              <picture class="swiper-slide-picture">
+                <source srcset="./slide1.png" media="(min-width: 992px)">
+                <source srcset="./slide1.png" media="(min-width: 576px)">
+                <img src="./slide1.png" alt="Техническое обслуживание" class="img-fluid w-100 h-100" style="object-fit: cover;">
+              </picture>
+              <div class="container h-100 d-flex align-items-center">
+                <div class="slide-content">
+                  <h2>Техническое обслуживание лифтов</h2>
+                  <p>Регулярное техническое обслуживание, безопасность и профессионализм</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide position-relative">
+              <picture class="swiper-slide-picture">
+                <source srcset="./slide2.png" media="(min-width: 992px)">
+                <source srcset="./slide2.png" media="(min-width: 576px)">
+                <img src="./slide2.png" alt="Техническое обслуживание" class="img-fluid w-100 h-100" style="object-fit: cover;">
+              </picture>
+              <div class="container h-100 d-flex align-items-center">
+                <div class="slide-content">
+                  <h2>Круглосуточная аварийная служба</h2>
+                  <p>Быстрое реагирование на аварии</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide position-relative">
+              <picture class="swiper-slide-picture">
+                <source srcset="./slide3.png" media="(min-width: 992px)">
+                <source srcset="./slide3.png" media="(min-width: 576px)">
+                <img src="./slide3.png" alt="Техническое обслуживание" class="img-fluid w-100 h-100" style="object-fit: cover;">
+              </picture>
+              <div class="container h-100 d-flex align-items-center">
+                <div class="slide-content">
+                  <h2>Системы диспетчеризации лифтов</h2>
+                  <p>высокотехнологичный контроль и управление лифтами через
+                    систему spider</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide position-relative">
+              <picture class="swiper-slide-picture">
+                <source srcset="./slide2.png" media="(min-width: 992px)">
+                <source srcset="./slide2.png" media="(min-width: 576px)">
+                <img src="./slide2.png" alt="Техническое обслуживание" class="img-fluid w-100 h-100" style="object-fit: cover;">
+              </picture>
+              <div class="container h-100 d-flex align-items-center">
+                <div class="slide-content">
+                  <h2>Круглосуточная служба диспетчерской связи</h2>
+                  <p>постоянная связь между пассажирами и диспетчерами,
+                    готовность помочь в любой момент</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      
+
+      <!-- Секция: Описание компании -->
+      <section class="py-5 bg-light">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <h2 class="mb-4">О компании</h2>
+          <p>
+            Предприятие <strong>МСП</strong> занимается техническим
+            обслуживанием лифтов и диспетчерской связи в Ботаническом, Заречном,
+            Пионерском районах, в районе Химмаш города Екатеринбурга, в г.
+            Сысерть.
+          </p>
+          <p>
+            Мы располагаем собственной круглосуточной службой лифтовой
+            диспетчерской связи, оснащенной системами диспетчеризации "Спайдер"
+            и "Обь". Наша круглосуточная аварийная служба быстра и педантична.
+          </p>
+        </div>
+      </section>
+
+      <!-- Секция: Продукция -->
+      <section class="py-5">
+        <div class="container my-5" data-aos="fade-up" data-aos-duration="1500">
+          <div class="text-center mb-4">
+            <h2>Наша продукция</h2>
+            <p class="text-muted">
+              Ознакомьтесь с популярными товарами нашего каталога
+            </p>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper productSwiper product-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <div class="card product-card h-100">
+                  <img src="./product1.png" class="card-img-top" alt="Товар 1">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Система Спайдер</h5>
+                    <p class="card-text text-muted">Современная система диспетчеризации для зданий любого масштаба.</p>
+                    <p class="fw-bold">Цена: 25 000 ₽</p>
+                    <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="750"
+              >
+              <div class="card product-card h-100">
+                <img src="./product2.png" class="card-img-top" alt="Товар 2">
+                <div class="card-body card-body-flex">
+                  <h5 class="card-title">Мониторинг Spider Light</h5>
+                  <p class="card-text text-muted">Облегченная версия системы мониторинга для небольших объектов.</p>
+                  <p class="fw-bold">Цена: 18 500 ₽</p>
+                  <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100">Подробнее</a>
+                </div>
+              </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+              <div class="card product-card h-100">
+                <img src="./product3.png" class="card-img-top" alt="Товар 3">
+                <div class="card-body card-body-flex">
+                  <h5 class="card-title">Системы мониторинга</h5>
+                  <p class="card-text text-muted">
+                    Система мониторинга лифтов: контроль состояния, прогноз
+                    неисправностей, уведомления о сбоях.
+                  </p>
+                  <p class="fw-bold">Цена: 7 500 ₽</p>
+                  <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100">Подробнее</a>
+                </div>
+              </div>
+              </div>
+
+              
+
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="1250"
+              >
+                <div class="card product-card h-100">
+                  <img src="./product4.png" class="card-img-top" alt="Товар 3">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Камера лифтового видеонаблюдения</h5>
+                    <p class="card-text text-muted">Надежная защита и запись видео в кабине лифта для безопасности пассажиров.</p>
+                    <p class="fw-bold">Цена: 7 500 ₽</p>
+                    <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination mt-3"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: Услуги -->
+      <section class="py-3 bg-light">
+        <div class="container my-5" data-aos="fade-up" data-aos-duration="1500">
+          <div class="text-center mb-4">
+            <h2>Наша услуги</h2>
+            <p class="text-muted">Большой спект выполняемых работ</p>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper productSwiper product-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <div class="card service-card h-100">
+                  <img src="./usliga1.png" class="card-img-top" alt="Услуга 1">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Техническое обслуживание лифтов</h5>
+                    <p class="card-text text-muted">Регулярное обслуживание и диагностика лифтового оборудования для обеспечения безопасной работы.</p>
+                    <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100 mt-2">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="750"
+              >
+                <div class="card service-card h-100">
+                  <img src="./usliga2.png" class="card-img-top" alt="Услуга 2">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Монтаж лифтового оборудования</h5>
+                    <p class="card-text text-muted">Профессиональный монтаж новых лифтов, модернизация и замена устаревших систем подъема.</p>
+                    <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100 mt-2">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <div class="card service-card h-100">
+                  <img src="./usliga3.png" class="card-img-top" alt="Услуга 3">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Установка систем диспетчеризации</h5>
+                    <p class="card-text text-muted">Интеграция современных систем диспетчеризации для контроля работы инженерного оборудования.</p>
+                    <a href="./product_usluga_detail.html" class="btn btn-outline-primary w-100 mt-2">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination mt-3"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: новости -->
+      <section class="py-3">
+        <div class="container my-5" data-aos="fade-up" data-aos-duration="1500">
+          <div class="text-center mb-4">
+            <h2>Последние новости</h2>
+            <p class="text-muted">Актуальные новости нашей компании</p>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper productSwiper product-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+              <div class="card news-card h-100">
+                <img src="./news1.png" class="card-img-top" alt="Новость 1">
+                <div class="card-body card-body-flex">
+                  <h5 class="card-title">День рождение компании</h5>
+                  <p class="card-text text-muted">Мы рады сообщить об крупном юбилеии компании</p>
+                  <p class="small text-muted">15 апреля 2025</p>
+                  <a href="./news_detail.html" class="btn btn-outline-primary w-100">Читать далее</a>
+                </div>
+              </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="750"
+              >
+                <div class="card news-card h-100">
+                  <img src="./news2.png" class="card-img-top" alt="Новость 2">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Новый проект диспетчеризации</h5>
+                    <p class="card-text text-muted">Запущен масштабный проект по установке системы "Спайдер" в 15 ЖК города.</p>
+                    <p class="small text-muted">1 апреля 2025</p>
+                    <a href="./news_detail.html" class="btn btn-outline-primary w-100">Читать далее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <div class="card news-card h-100">
+                  <img src="./news3.png" class="card-img-top" alt="Новость 3">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Инновации в мониторинге лифтов</h5>
+                    <p class="card-text text-muted">Представляем новую версию системы мониторинга с поддержкой AI-аналитики.</p>
+                    <p class="small text-muted">20 марта 2025</p>
+                    <a href="./news_detail.html" class="btn btn-outline-primary w-100">Читать далее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="1250"
+              >
+                <div class="card news-card h-100">
+                  <img src="./news4.png" class="card-img-top" alt="Новость 3">
+                  <div class="card-body card-body-flex">
+                    <h5 class="card-title">Работа с ЖК бизнес класса</h5>
+                    <p class="card-text text-muted">Делимся опытом о дистпечерезации лифтов в ЖК бизнес класса</p>
+                    <p class="small text-muted">20 марта 2025</p>
+                    <a href="./news_detail.html" class="btn btn-outline-primary w-100">Читать далее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination mt-3"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- О компании -->
+          <div class="col-md-4 mb-4">
+            <h5>МСП</h5>
+            <p>
+              Компания, специализирующаяся на обслуживании лифтовой связи.
+              Надёжность и качество — наш приоритет.
+            </p>
+          </div>
+
+          <!-- Контакты -->
+          <div class="col-md-4 mb-4">
+            <h5>Контакты</h5>
+            <ul class="list-unstyled">
+              <li>
+                Email:
+                <a
+                  href="mailto:info@msp.ru"
+                  class="text-white text-decoration-underline"
+                  >info@msp.ru</a
+                >
+              </li>
+              <li>
+                Телефон:
+                <a
+                  href="tel:+79991234567"
+                  class="text-white text-decoration-underline"
+                  >+7 (999) 123-45-67</a
+                >
+              </li>
+              <li>Адрес: г. Москва, ул. Технопарковая, 10</li>
+            </ul>
+          </div>
+
+          <!-- Быстрые ссылки -->
+          <div class="col-md-4 mb-4">
+            <h5>Навигация</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >О компании</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Продукция</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Услуги</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Социальные сети -->
+        <div class="text-center mb-3">
+          <a href="#" class="text-white me-3 fs-4" title="VK">
+            <i class="bi bi-vk"></i>
+          </a>
+          <a href="#" class="text-white me-3 fs-4" title="Telegram">
+            <i class="bi bi-telegram"></i>
+          </a>
+          <a href="#" class="text-white fs-4" title="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="text-center small">© 2025 МСП. Все права защищены. <br> Пример вёрстки</div>
+      </div>
+      <!-- Кнопка наверх -->
+      <button
+        id="scrollTopBtn"
+        onclick="scrollToTop()"
+        class="btn btn-warning position-fixed bottom-3 end-3 m-3 scroll-btn"
+        title="Наверх"
+      >
+        ↑
+      </button>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="feedbackModalLabel">
+              Заказать обратный звонок
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Введите ваше имя"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Телефон</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Заказать обратный звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

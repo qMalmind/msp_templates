@@ -1,0 +1,157 @@
+.swiper {
+    width: 100%;
+    position: relative;
+  }
+
+  .main-swiper {
+    height: 400px;
+  }
+
+  .product-swiper {
+    height: 680px;
+  }
+
+  .product-swiper .card-title {
+    min-height: 48px;
+  }
+
+  .swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .slide-content {
+    position: relative;
+    max-width: 600px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .swiper-slide > .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* вертикальное центрирование */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    z-index: 10;
+    pointer-events: auto;
+  }
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  .card-img-top {
+    transition: transform 0.4s ease;
+  }
+
+  footer a:hover {
+    color: #ffc107; /* Акцентный цвет при наведении */
+  }
+
+  footer .btn-warning {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-weight: bold;
+    right: 50px;
+    bottom: 50px;
+  }
+  footer .btn-warning:hover {
+    background-color: #e0a800;
+  }
+
+  #scrollTopBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #scrollTopBtn:hover {
+    background-color: #e0a800;
+  }
+
+  .scroll-btn {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: all 0.2s ease-out;
+  }
+
+  .scroll-btn-active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 576px) {
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+    .contact-info {
+      display: none;
+    }
+    .mobile-contact-info {
+      display: block !important;
+    }
+
+    .card:hover {
+        transform: translateY(0);
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
+        cursor: pointer;
+    }
+  }
+  .mobile-contact-info {
+    display: none;
+    padding-top: 10px;
+  }
+
+  .card-body-flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body-flex .card-text{
+    flex: 1;
+  }
+
+  .banner {
+    height: 400px;
+    overflow: hidden;
+  }
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide-picture{
+    position: absolute;
+    width: 100%;
+  }
